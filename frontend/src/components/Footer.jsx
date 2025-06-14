@@ -39,7 +39,7 @@ const Footer = () => {
       {/* Divider and Copyright */}
       <div className="mt-12">
         <hr className="border-gray-700" />
-        <p className="text-sm text-center text-gray-400 py-5">
+        <p className="text-sm text-center text-gray-400 py-6">
           &copy; 2025 assertiveattire.com - All Rights Reserved.
         </p>
       </div>
