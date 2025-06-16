@@ -39,6 +39,7 @@ pipeline {
                     sh 'cat $REPORT_FILE'
                 }
             }
+            
         }
 
         stage('Send Test Results Email') {
