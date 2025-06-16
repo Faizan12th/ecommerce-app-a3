@@ -59,6 +59,7 @@ Jenkins Pipeline
                     recipientProviders: [[$class: 'CulpritsRecipientProvider']],
                     to: 'faizankhurshid83@gmail.com' // 🔁 Replace with user email or use env var
                 )
+                
             }
         }
     }
