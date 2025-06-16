@@ -40,26 +40,5 @@ pipeline {
                 }
             } 
         }
-
-        stage('Send Test Results Email') {
-            steps {
-                echo 'Sending email with test report...'
-                // You must configure Jenkins mailer plugin + SMTP settings
-                emailext(
-                    subject: 'Selenium Test Report - Assignment 3',
-                    body: '''Hello,
-
-Here are the results of the Selenium tests for your latest commit:
-
-${FILE,path="selenium-python-tests/test_report.txt"}
-
-Regards,
-Jenkins Pipeline
-''',
-                    recipientProviders: [[$class: 'CulpritsRecipientProvider']],
-                    to: 'faizankhurshid83@gmail.com' // 🔁 Replace with user email or use env var
-                )
-            }
-        }
     }
 }
