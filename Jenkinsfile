@@ -38,8 +38,7 @@ pipeline {
                     sh 'docker run --rm selenium-tests > $REPORT_FILE || true'
                     sh 'cat $REPORT_FILE'
                 }
-            }
-            
+            } 
         }
 
         stage('Send Test Results Email') {
