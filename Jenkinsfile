@@ -39,7 +39,6 @@ pipeline {
                     sh 'cat $REPORT_FILE'
                 }
             } 
-            
         }
     }
 }
